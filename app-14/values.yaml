@@ -1,0 +1,8 @@
+generator:
+  deployments:
+    count: 0
+  configmaps:
+    count: 2
+    data:
+      dummy.txt: |
+        This is a dummy file.

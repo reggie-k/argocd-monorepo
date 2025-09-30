@@ -1,0 +1,23 @@
+# .gitignore for Helm projects
+# Ignore Helm chart build output
+charts/*/charts/
+charts/*/tmpcharts/
+charts/*/Chart.lock
+charts/*/requirements.lock
+charts/*/values.schema.json
+charts/*/crds/
+charts/*/templates/.DS_Store
+charts/*/.DS_Store
+charts/*/values-production.yaml
+charts/*/values-staging.yaml
+charts/*/values-dev.yaml
+charts/*/values-test.yaml
+*.tgz
+*.bak
+*.swp
+.DS_Store
+# Ignore local Helm plugins
+.helm/plugins/
+# Ignore test output
+junit.xml
+coverage.txt
