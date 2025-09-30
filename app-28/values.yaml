@@ -4,5 +4,5 @@ generator:
   configmaps:
     count: 2
     data:
-      dummy.txt: |
-        This is a dummy file.
+      dummy.txt: |-
+        fYMqNTkunXPG4
