@@ -6,3 +6,4 @@ generator:
     data:
       dummy.txt: |-
         EWOhKF8iAM7Si
+  sleepSeconds: 30
