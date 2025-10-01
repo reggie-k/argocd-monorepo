@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      L2s1AhVp4vD6V
+      EshIqMRSDMp64
   count: 2
 sleepSecondsMax: 30
