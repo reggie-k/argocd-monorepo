@@ -3,6 +3,8 @@ kind: ApplicationSet
 metadata:
   name: monorepo-apps
 spec:
+  preservedFields:
+    annotations: ["codefresh.io/resync"]
   generators:
     - git:
         repoURL: 'https://github.com/ilia-medvedev-codefresh/argocd-monorepo.git'
