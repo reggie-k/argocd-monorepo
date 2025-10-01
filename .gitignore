@@ -21,3 +21,4 @@ charts/*/values-test.yaml
 # Ignore test output
 junit.xml
 coverage.txt
+.scripts/sync-all-remote.sh

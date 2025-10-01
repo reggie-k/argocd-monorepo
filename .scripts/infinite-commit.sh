@@ -21,7 +21,7 @@ while true; do
         RANDOM_TEXT=$(LC_ALL=C tr -dc 'A-Za-z0-9' </dev/urandom | head -c 13)
         echo $RANDOM_TEXT
         echo "Updating $VALUES_FILE: configmaps.data[\"dummy.txt\"] = $RANDOM_TEXT"
-        yq e ".generator.configmaps.data[\"dummy.txt\"] = \"$RANDOM_TEXT\"" -i "$VALUES_FILE"
+        yq e ".configmaps.data[\"dummy.txt\"] = \"$RANDOM_TEXT\"" -i "$VALUES_FILE"
         git add "$VALUES_FILE"
         git commit -m "Randomize dummy.txt in $SELECTED_APP on $(date)"
         git push

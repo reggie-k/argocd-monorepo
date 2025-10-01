@@ -36,5 +36,5 @@ configmaps:
   data:
     dummy.txt: |
       This is a dummy file.
-  count: 1
+  count: 2
 sleepSecondsMax: 30

@@ -12,4 +12,10 @@ spec:
       containers:
         - name: sleep
           image: busybox
-          command: ["sh", "-c", "sleep {{ .Values.sleepSeconds | default 5 }}"]
+          command:
+            - sh
+            - -c
+            - |
+              max={{ .Values.sleepSecondsMax | default 30 }}
+              min=3
+              sleep $((RANDOM % (max - min + 1) + min))

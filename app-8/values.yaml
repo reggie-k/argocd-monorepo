@@ -1,9 +1,40 @@
-generator:
-  deployments:
-    count: 0
-  configmaps:
-    count: 2
-    data:
-      dummy.txt: |-
-        qBXEZh3zAYtYu
-  sleepSeconds: 30
+nameOverride: ""
+fullnameOverride: ""
+imagePullSecrets: []
+deployments:
+  count: 0
+  replicaCount: 1
+  serviceAccount:
+    create: false
+    name: ""
+  containers:
+    - name: app
+      image: quay.io/nginx/nginx-unprivileged:1.29.1-alpine
+      imagePullPolicy: IfNotPresent
+      resources: {}
+      podAnnotations: {}
+      podLabels: {}
+      ports:
+        - containerPort: 8080
+      livenessProbe:
+        httpGet:
+          path: /
+          port: 8080
+      readinessProbe:
+        httpGet:
+          path: /
+          port: 8080
+  volumes: []
+  podAnnotations: {}
+  podLabels: {}
+  podSecurityContext: {}
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
+
+configmaps:
+  data:
+    dummy.txt: |
+      This is a dummy file.
+  count: 2
+sleepSecondsMax: 30
