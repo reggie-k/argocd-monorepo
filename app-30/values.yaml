@@ -31,10 +31,9 @@ deployments:
   nodeSelector: {}
   tolerations: []
   affinity: {}
-
 configmaps:
   data:
-    dummy.txt: |
-      This is a dummy file.
+    dummy.txt: |-
+      Y1WBZpT2kxER6
   count: 2
 sleepSecondsMax: 30
