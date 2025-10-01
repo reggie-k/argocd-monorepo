@@ -1,0 +1,9 @@
+deployments:
+  count: 0
+configmaps:
+  count: 2
+  data:
+    dummy.txt: |-
+      4FWHNtQKLYZ35
+
+sleepSecondsMax: 30
