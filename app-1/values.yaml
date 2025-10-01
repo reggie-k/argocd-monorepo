@@ -7,4 +7,4 @@ generator:
       dummy.txt: |-
         hPSkGgsJUwOc5
 
-sleepSeconds: 5
+sleepSeconds: 30
