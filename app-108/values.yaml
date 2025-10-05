@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      FAXcZ3S200GET
+      kMVW6AhVT02Jy
   count: 2
 sleepSecondsMax: 30
