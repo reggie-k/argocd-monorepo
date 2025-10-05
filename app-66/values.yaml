@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      PJrSXOJdZavH2
+      A4AMDNoreMyNA
   count: 2
 sleepSecondsMax: 30
