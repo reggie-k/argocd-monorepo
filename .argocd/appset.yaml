@@ -7,17 +7,18 @@ spec:
     annotations: ["codefresh.io/resync"]
   generators:
     - git:
-        repoURL: 'https://github.com/ilia-medvedev-codefresh/argocd-monorepo.git'
+        repoURL: 'https://github.com/reggie-k/argocd-monorepo.git'
         revision: main
         directories:
           - path: 'app-*'
+        requeueAfterSeconds: 10
   template:
     metadata:
       name: '{{path.basename}}'
     spec:
       project: default
       source:
-        repoURL: 'https://github.com/ilia-medvedev-codefresh/argocd-monorepo.git'
+        repoURL: 'https://github.com/reggie-k/argocd-monorepo.git'
         targetRevision: main
         path: '{{path}}'
       destination:

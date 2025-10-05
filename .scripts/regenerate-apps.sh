@@ -12,9 +12,9 @@ for d in app-*; do
     fi
 done
 
-# Recreate app-1 to app-150 from app-0
-echo "Recreating app-1 to app-150 from app-0..."
-for i in {1..150}; do
+# Recreate app-1 to app-200 from app-0
+echo "Recreating app-1 to app-200 from app-0..."
+for i in {1..200}; do
     cp -r app-0 "app-$i"
     # Optionally, update values.yaml or Chart.yaml if you want to customize per app
     # For example, you could set a unique value in values.yaml:

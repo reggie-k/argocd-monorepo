@@ -3,13 +3,13 @@
 set -e
 
 ARGOCD_NAMESPACE="argocd"
-ARGOCD_SERVER_URL="http://localhost:8888"
+ARGOCD_SERVER_URL="http://localhost:8080"
 
 cd "$(dirname "$0")/.."
 
 # Get ArgoCD admin password and login to get token
 ARGOCD_ADMIN_PASSWORD=$(kubectl -n $ARGOCD_NAMESPACE get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
-argocd login localhost:8888 --username admin --password $ARGOCD_ADMIN_PASSWORD --insecure --plaintext > /dev/null
+argocd login localhost:8080 --username admin --password $ARGOCD_ADMIN_PASSWORD --plaintext --grpc-web --insecure
 ARGOCD_TOKEN=$(argocd account generate-token)
 
 if [ -z "$ARGOCD_TOKEN" ]; then
