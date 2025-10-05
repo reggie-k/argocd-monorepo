@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      grSn0Yi8ULXLy
+      uYmoE5vs2vGSY
   count: 2
 sleepSecondsMax: 30
