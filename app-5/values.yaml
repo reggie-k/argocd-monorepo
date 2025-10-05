@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      Wpf4AzjGhfOPd
+      gAtQZsEcq1tuB
   count: 2
 sleepSecondsMax: 30
