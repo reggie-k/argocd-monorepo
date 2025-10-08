@@ -37,3 +37,7 @@ configmaps:
       VUAUCBY1r7csG
   count: 2
 sleepSecondsMax: 30
+generator:
+  configmaps:
+    data:
+      dummy.txt: CxqksYUIAPoRU
