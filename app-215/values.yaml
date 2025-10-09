@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      BRiDcn8S8CESi
+      dGDRMPugeyUQL
   count: 2
 sleepSecondsMax: 30
