@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      Rasd30Qd6MPJB
+      evVX6FrevVpsN
   count: 2
 sleepSecondsMax: 30
