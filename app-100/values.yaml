@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      kwo0hQhGK0eOT
+      nkueCAVMcMPcd
   count: 2
 sleepSecondsMax: 30
