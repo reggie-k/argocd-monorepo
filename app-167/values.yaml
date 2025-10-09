@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      diaPel87EsCHA
+      teURmdoZKkkda
   count: 2
 sleepSecondsMax: 30
