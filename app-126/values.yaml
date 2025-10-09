@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      LAe3MtZIOusRm
+      asMHzIPN1Mwdk
   count: 2
 sleepSecondsMax: 30
