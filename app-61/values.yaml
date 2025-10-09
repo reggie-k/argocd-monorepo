@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      m4CujajaENvIr
+      3LObllu0RrSET
   count: 2
 sleepSecondsMax: 30
