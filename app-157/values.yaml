@@ -34,6 +34,6 @@ deployments:
 configmaps:
   data:
     dummy.txt: |-
-      f3R32fDcZgmJg
+      znicfcCOlL2OP
   count: 2
 sleepSecondsMax: 30
